@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arduinobeginners</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+var sound=new Audio();
+  sound.src="Mouse-Click-00-c-FesliyanStudios.com.mp3";
+</script>
+  </head>
+  <body>
+    <div class="menu">
+      <img class="logo"src="https://cdn.1min30.com/wp-content/uploads/2018/10/Arduino-logo.jpg" alt="">
+    <ul>
+      <li><a class="Home"href="#" onclick="sound.play()">Home</a></li>
+      <li><a class="Basics"href="#Basics" onclick="sound.play()">Basics</a>
+        <div class="submenu1">
+        <ul>
+          <li><a href="#whatisarduino" onclick="sound.play()">what is IOT</a></li>
+          <li><a href="#gettingstarted" onclick="sound.play()">Get started</a></li>
+        </ul>
+       </div>
+     </li>
+      <li><a class="Boards"href="#Boards" onclick="sound.play()">Boards</a>
+       <div class="submenu1">
+        <ul>
+          <li><a href="#Arduinouno" onclick="sound.play()">Arduino uno</a></li>
+          <li><a href="#Arduinomega" onclick="sound.play()">Arduinomega</a></li>
+          <li><a href="#Arduinomicro" onclick="sound.play()">Arduino micro</a></li>
+          <li><a href="#esp32" onclick="sound.play()">esp32</a></li>
+        </ul>
+       </div>
+      </li>
+      <li><a class="Components"href="#components" onclick="sound.play()">Components</a>
+        <div class="submenu1">
+         <ul>
+           <li class="me"><a href="#general" onclick="sound.play()">General</a>
+             <div class="submenu2">
+              <ul>
+                <li><a href="#breadboard" onclick="sound.play()">Bread board</a></li>
+                <li><a href="#jumperwires" onclick="sound.play()">Jumper wires</a></li>
+                <li><a href="#led's" onclick="sound.play()">LED's</a></li>
+                <li><a href="#potentiometer" onclick="sound.play()">Potentiometer</a></li>
+              </ul>
+             </div>
+           </li>
+           <li class="me"><a href="#sensors" onclick="sound.play()">Sensors</a>
+             <div class="submenu2">
+              <ul>
+                <li><a href="#temperature" onclick="sound.play()">Temperature</a></li>
+                <li><a href="#humidity" onclick="sound.play()">Humidity</a></li>
+                <li><a href="#ir" onclick="sound.play()">IR receiver</a></li>
+                <li><a href="#ultrasonic" onclick="sound.play()">Ultrasonic</a></li>
+                <li><a href="#pir" onclick="sound.play()">PIR</a></li>
+
+              </ul>
+             </div>
+           </li>
+           <li class="me"><a href="#modules" onclick="sound.play()">Modules</a>
+             <div class="submenu2">
+              <ul>
+
+                <li><a href="#" onclick="sound.play()">Servo motor</a></li>
+
+                <li><a href="#" onclick="sound.play()">7-segment LED</a></li>
+                <li><a href="#" onclick="sound.play()">8*8 LED matrix</a></li>
+                <li><a href="#" onclick="sound.play()">1602 LCD</a></li>
+              </ul>
+             </div>
+           </li>
+           <li class="me"><a href="#" onclick="sound.play()">useful IC's</a>
+             <div class="submenu2">
+              <ul>
+                <li><a href="#" onclick="sound.play()">shift registors</a></li>
+                <li><a href="#" onclick="sound.play()">motor drivers</a></li>
+                <li><a href="#" onclick="sound.play()">NE555 timer</a></li>
+
+                <li><a href="#" onclick="sound.play()">MAX7219</a></li>
+              </ul>
+             </div>
+           </li>
+         </ul>
+        </div>
+      </li>
+
+      <li><a class="Contact Us"href="#contactus"onclick="sound.play()">Contact Us</a></li>
+    </ul>
+      </div>
+  <div class="container">
+
+   <a name="Basics"></a>
+    <a name="whatisarduino"></a>
+      <h1 class="main">Basics</h1>
+  <div class="name">
+
+   <h2 class="head">What Is Arduino :</h2>
+  <p>Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs
+  and perform them.The inputs to arduino boards are given through Arduino IDE.The Arduino programming language is based on a very
+  simple hardware programming language called processing, which is similar to the C language. After the sketch is written in the Arduino
+  IDE, it should be uploaded on the Arduino board for execution.The open source Arduino IDE runs on Windows, Mac OS X, and Linux.</p>
+  </div>
+    <hr/>
+  <a name="gettingstarted"></a>
+  <div class="name">
+    <h2 class="head">Getting Started :</h2>
+    <p>The official website of Arduino provides IDE for free.As i said earlier that Arduino IDE runs on Windows, Mac OS X, and Linux,Download
+    Arduino IDE suitable for your operating system.</p>
+    <p>Download and install Arduino IDE from following link :</p>
+    <div class="btn">
+      <a href="https://www.arduino.cc/en/main/software">Download</a>
+    </div>
+    <h3>Programming</h3>
+    <p>You must have prerequisites of C/C++.You will learn programming of each component when they are discussed.</p>
+    <h3>Uploading code to board</h3>
+    <ul>
+      <li>open your code in arduino IDE </li>
+      <li>Select tools </li>
+      <li>Select your board </li>
+      <li>Select COM port to which board is connected </li>
+      <li>select sketch</li>
+      <li>select upload</li>
+      <li>if there are no errors in code it displays "done uploading" at left bottom corner</li>
+
+    </ul>
+</div>
+  <hr/>
+  <a name="Boards"></a>
+  <h1 class="main">Boards</h1>
+  <div class="terms">
+  <p>There are several boards which can be programmable by using arduino IDE,some of them are given below.
+  UNO board is recommended for beginners.Let us learn some terms before reading boards description.<br/><span>Microcontroller :</span> it is brain of each board
+which runs the program and send commands to different components through digital and analog pins.<br/><span>RAM :</span> The random access memory available to run code.We should not
+write a program which occupies higher memory than RAM of board.<br/><span>operating voltage :</span> Max Output voltage of pins of board.voltage applied to board through USB or external battery should be greater than or equal to operating voltage.
+These boards have a inbuild voltage regulator which suplies 5V even though we apply high voltage upto certain extent.<br/><span>Digital I/O pins :</span> These pins reads or writes high or low voltages.High voltage refers to operating voltage,low voltage refers to zero
+voltage.these pins cant read or write intermediate voltages.<br/><span>Analog pins : </span>used to read analog inputs</p>
+</div>
+
+   <a name="Arduinouno"></a>
+  <div class="name">
+    <div class="box1">
+  <h2 class="head">Arduino UNO:</h2>
+  <ol>
+    <li>Dimension                       :2.7 in*2.1 in</li>
+    <li>Processor                       :Atmega328P</li>
+    <li>operating Voltage               :5V</li>
+    <li>RAM :2KB</li>
+    <li>Digital I/O pins                :14</li>
+    <li>Digital I/O pins with PWM       :6</li>
+    <li>Analog pins                     :6</li>
+    <li>USB connectivity                :standard A/B usb</li>
+    <li>Flash memory(KB)                :32</li>
+    <li>Wi-fi :No(module can enable wifi to uno)</li>
+    <li>Bluetooth :No(module can enable Bluetooth to uno)</li>
+  </ol>
+</div>
+<img class="img uno"src="https://c2.peakpx.com/wallpaper/320/710/451/integrated-circuit-computer-technology-wallpaper-preview.jpg" alt="">
+  </div>
+  <hr/>
+  <a name="Arduinomega"></a>
+ <div class="name">
+   <div class="box1">
+ <h2 class="head">Arduino Mega :</h2>
+ <ol>
+   <li>Dimension                       :4 in*2.1 in</li>
+   <li>Processor                       :ATmega2560</li>
+   <li>operating Voltage               :5V</li>
+   <li>RAM :2KB</li>
+   <li>Digital I/O pins                :54</li>
+   <li>Digital I/O pins with PWM       :15</li>
+   <li>Analog pins                     :16</li>
+   <li>USB connectivity                :standard A/B usb</li>
+   <li>Flash memory(KB)                :256</li>
+   <li>Wi-fi :No(module can enable wifi to mega)</li>
+   <li>Bluetooth :No(module can enable Bluetooth to mega)</li>
+ </ol>
+ </div>
+ <img class="img mega"src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Arduino_Mega.jpg/1280px-Arduino_Mega.jpg">
+ </div>
+ <hr/>
+ <a name="Arduinomicro"></a>
+<div class="name">
+  <div class="box1">
+<h2 class="head">Arduino micro :</h2>
+<ol>
+  <li>Dimension                       :0.7 in*1.9 in</li>
+  <li>Processor                       :ATmega32U4</li>
+  <li>operating Voltage               :5V</li>
+  <li>RAM :2KB</li>
+  <li>Digital I/O pins                :20</li>
+  <li>Digital I/O pins with PWM       :7</li>
+  <li>Analog pins                     :12</li>
+  <li>USB connectivity                :Micro-USB</li>
+  <li>Flash memory(KB)                :32</li>
+  <li>Wi-fi :No</li>
+  <li>Bluetooth :No</li>
+</ol>
+</div>
+<img class="img micro"src="https://live.staticflickr.com/8630/16317675469_89eb0bacf0_b.jpg">
+</div>
+<hr/>
+<a name="esp32"></a>
+<div class="name">
+  <div class="box1">
+<h2 class="head">ESP32 :</h2>
+<ol>
+ <li>Processor                       :Tensilica Xtensa LX6 microprocessor</li>
+ <li>operating Voltage               :3.3V</li>
+ <li>RAM :512KB</li>
+ <li>Digital I/O pins                :36</li>
+ <li>Digital I/O pins with PWM       :16</li>
+ <li>Analog pins                     :18</li>
+ <li>USB connectivity                :Micro-USB</li>
+ <li>Flash memory(MB)                :16</li>
+ <li>Wi-fi :available on chip</li>
+ <li>Bluetooth :available on chip</li>
+</ol>
+</div>
+<img class="img esp32"src="https://upload.wikimedia.org/wikipedia/commons/1/1d/ESP32_Espressif_ESP-WROOM-32_Dev_Board_%282%29.jpg">
+</div>
+<hr/>
+<a name="components"></a>
+<h1 class="main">Components</h1>
+<a name="general"></a>
+<h2 class="head">General :</h2>
+<a name="breadboard"></a>
+<div class="name">
+
+<div class="box1">
+<h3 class="head1">Breadboard</h3>
+<p>To make electronic circuits we use breadboard instead of soldering.
+components and wires can be reusable if we use breadboard.</p>
+<ul>
+  <li>Vertical 5 holes corresponding to A,B,C,D,E in figure are at same potential.i.e;connected by a metal chip.</li>
+  <li>All holes beside +voltage are at same potential</li>
+  <li>All holes beside _voltage are at same potential</li>
+</ul>
+</div>
+<img class="img bread"src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bread_board_1480358_59_60_HDR_Enhancer.jpg/800px-Bread_board_1480358_59_60_HDR_Enhancer.jpg" alt="image of breadboard">
+</div>
+<hr/>
+<a name="jumperwires"></a>
+<div class="name">
+
+<div class="box1">
+<h3 class="head1">Jumperwires</h3>
+<p>Jumperwires are used to connect components.These are of three types</p>
+<ul>
+  <li>Female to Female(1st in image)</li>
+  <li>Male to Male(2nd in image)</li>
+  <li>Male to Female(3rd in image)</li>
+</ul>
+</div>
+  <img class="img wires"src="https://images-na.ssl-images-amazon.com/images/I/816-FhWxCnL._SL1500_.jpg" alt="image of jumperwires">
+</div>
+<hr/>
+<a name="led's"></a>
+<div class="name">
+  <div class="box1">
+<h3 class="head1">LED's</h3>
+<p>long terminal is cathode and short terminal is anode</p>
+<p>Tutorial 1 :</p>
+<ul>
+  <li>open IDE and select board and COM</li>
+  <li>connect led cathode to pin 13 and anode to Gnd</li>
+  <li>now write code as follows</br>#define led 13 </li>
+  <li>declare led pin as output</br>void setup(){</br>pinMode(led,OUTPUT);}</li>
+  <li>blink led for every 1 second</br>void loop(){</br>digitalWrite(led,HIGH);</br>delay(1000);      //wait 1000 milli seconds</br>digitalWrite(led,LOW);</br>delay(1000);      //wait 1000 milli seconds}</li>
+</ul>
+</div>
+<img class="img led"src="https://cdn.pixabay.com/photo/2012/04/10/16/50/led-26354_960_720.png" alt="image of led">
+</div>
+<hr/>
+<a name="potentiometer"></a>
+<div class="name">
+<div class="box1">
+<h3 class="head1">potentiometer</h3>
+<p>it is used to obtain intermediate voltage between zero and operating voltage by rotating knob.connect 2 end terminals to high and low voltage.connect middle tetminal to any analog pin of UNO say A0 .</p>
+<p>CODE:</br>#define potentiometer A0</br>void setup(){</br>Serial.begin(9600);         // initialize serial communication at 9600 bits per second </br>pinMode(potentiometer,INPUT);</br>
+   int sensorValue = analogRead(A0); // read the input on analog pin 0: </br>
+
+   float voltage = sensorValue * (5.0 / 1023.0);// Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V): </br>
+
+   Serial.println(voltage);// print out the value you read:  }
+</p>
+</div>
+  <img class="img potentiometer"src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Potentiometer.jpg/512px-Potentiometer.jpg" alt="image of potentiometer">
+</div>
+<hr/>
+<a name="Sensors"></a>
+<h2 class="head">Sensors :</h2>
+<a name="temperature"></a>
+<div class="name">
+<div class="box1">
+<h3 class="head1">Temperature</h3>
+<p>LM35 is a temperature sensor.</br>CODE :</br>float temp; </br>
+int tempPin = 0; </br>
+void setup()
+{ </br>
+Serial.begin(9600);
+} </br>
+void loop()
+{ </br>
+temp = analogRead(tempPin);
+// read analog volt from sensor and save to variable temp </br>
+
+temp = temp * 0.48828125;
+// convert the analog volt to its temperature equivalent</br>
+Serial.print("TEMPERATURE = "); </br>
+Serial.print(temp);   // display temperature value</br>
+Serial.print("*C"); </br>
+Serial.println(); </br>
+delay(1000);  // update sensor reading each one second
+}
+</p>
+</div>
+<img class="img temperature"src="https://upload.wikimedia.org/wikipedia/commons/3/35/LM35_temperature_sensor_semiconductor_thermometer_1480374_5_6_HDR_enhancer.jpg" alt="image of Temperature sensor">
+</div>
+<hr/>
+<a name="contactus"></a>
+</div>
+<footer>
+<p class="us">CONTACT US </p>
+
+</div>
+<div class="facebook">
+  <a href="https://www.facebook.com/profile.php?id=100045940220680" class="fa fa-facebook">facebook</a>
+</div>
+  </footer>
+  </body>
+</html>
